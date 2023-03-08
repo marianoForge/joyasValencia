@@ -13,10 +13,10 @@ const ShopingList = () => {
   const handleChange = (e, newValue) => {
     setValue(newValue);
   };
-
+  console.log(process.env.REACT_APP_PROD_URL);
   async function getItems() {
     const items = await fetch(
-      'https://strapi-app-2qbph.ondigitalocean.app/api/items?populate=image',
+      process.env.REACT_APP_PROD_URL + '/api/items?populate=image',
       {
         method: 'GET',
       }
