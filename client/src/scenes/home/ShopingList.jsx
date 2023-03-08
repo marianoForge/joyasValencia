@@ -16,7 +16,7 @@ const ShopingList = () => {
 
   async function getItems() {
     const items = await fetch(
-      'http://localhost:1337/api/items?populate=image',
+      'https://strapi-app-2qbph.ondigitalocean.app/api/items?populate=image',
       { method: 'GET' }
     );
     const itemsJson = await items.json();
