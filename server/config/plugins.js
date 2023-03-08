@@ -9,19 +9,4 @@ module.exports = ({ env }) => ({
       roles: ["strapi-super-admin", "strapi-editor", "strapi-author"],
     },
   },
-  upload: {
-    config: {
-      provider: "cloudinary",
-      providerOptions: {
-        cloud_name: env("dmntjrnnn"),
-        api_key: env("964158226449232"),
-        api_secret: env("Cs9J9lWCxjjOuHfX5BIZW4uiBEg"),
-      },
-      actionOptions: {
-        upload: {},
-        uploadStream: {},
-        delete: {},
-      },
-    },
-  },
 });
