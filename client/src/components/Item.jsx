@@ -26,6 +26,8 @@ const Item = ({ item, width }) => {
     },
   } = image;
 
+  console.log(image);
+
   return (
     <Box width={width}>
       <Box
@@ -37,7 +39,7 @@ const Item = ({ item, width }) => {
           alt={item.name}
           width="300px"
           height="400px"
-          src={`http://localhost:1337${url}`}
+          src={`https://strapi-app-2qbph.ondigitalocean.app${url}`}
           onClick={() => navigate(`/item/${item.id}`)}
           style={{ cursor: 'pointer' }}
         />

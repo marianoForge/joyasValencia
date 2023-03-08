@@ -13,17 +13,17 @@ const ShopingList = () => {
   const handleChange = (e, newValue) => {
     setValue(newValue);
   };
-  console.log(process.env.REACT_APP_PROD_URL);
   async function getItems() {
     const items = await fetch(
-      process.env.REACT_APP_PROD_URL + '/api/items?populate=image',
+      'https://strapi-app-2qbph.ondigitalocean.app/api/items?populate=image',
       {
         method: 'GET',
+        cors: 'no-cors',
       }
     );
 
     const itemsJson = await items.json();
-    console.log(itemsJson);
+    console.log(items);
     dispatch(setItems(itemsJson.data));
   }
 
