@@ -18,14 +18,15 @@ const ShopingList = () => {
       'https://strapi-app-2qbph.ondigitalocean.app/api/items?populate=image',
       {
         method: 'GET',
+        cors: 'no-cors',
         headers: {
-          'Content-Type': 'application/json',
+          'Access-Control-Allow-Headers': 'Content-Type',
         },
       }
     );
 
     const itemsJson = await items.json();
-    console.log(items);
+    console.log(itemsJson);
     dispatch(setItems(itemsJson.data));
   }
 
