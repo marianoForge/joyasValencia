@@ -18,7 +18,6 @@ const ShopingList = () => {
       'https://strapi-app-2qbph.ondigitalocean.app/api/items?populate=image',
       {
         method: 'GET',
-        cors: 'no-cors',
       }
     );
 
