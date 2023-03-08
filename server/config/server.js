@@ -1,5 +1,4 @@
 module.exports = ({ env }) => ({
-  url: "https://hammerhead-app-wxq3g.ondigitalocean.app",
   host: env("HOST", "0.0.0.0"),
   port: env.int("PORT", 1337),
   app: {
