@@ -23,6 +23,7 @@ module.exports = [
       headers: "*",
       origin: [
         "http://localhost:1337",
+        "http://localhost:3000",
         "https://lobster-app-ctpxl.ondigitalocean.app/",
       ],
     },
