@@ -1,19 +1,21 @@
 module.exports = [
   "strapi::errors",
-  {
-    name: "strapi::security",
-    config: {
-      contentSecurityPolicy: {
-        userDefaults: true,
-        directives: {
-          "connect-src": ["'self'", "https"],
-          "img-src": ["'self'", "data:", "blob:", "https://res.cloudinary.com"],
-          "media-src": ["'self'", "data:", "blob:"],
-          upgradeInsecure: null,
-        },
-      },
-    },
-  },
+  "strapi::security",
+  // {
+  //   name: "strapi::security",
+  //   config: {
+  //     contentSecurityPolicy: {
+  //       userDefaults: true,
+  //       directives: {
+  //         "connect-src": ["'self'", "https"],
+  //         "img-src": ["'self'", "data:", "blob:", "https://res.cloudinary.com"],
+  //         "media-src": ["'self'", "data:", "blob:"],
+  //         upgradeInsecure: null,
+
+  //       },
+  //     },
+  //   },
+  // },
   "strapi::cors",
   "strapi::poweredBy",
   "strapi::logger",
