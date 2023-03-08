@@ -14,7 +14,7 @@ module.exports = ({ env }) => ({
       provider: "cloudinary",
       providerOptions: {
         cloud_name: env("dmntjrnnn"),
-        api_key: env("dmntjrnnn"),
+        api_key: env("964158226449232"),
         api_secret: env("Cs9J9lWCxjjOuHfX5BIZW4uiBEg"),
       },
       actionOptions: {
