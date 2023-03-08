@@ -15,12 +15,9 @@ const ShopingList = () => {
   };
 
   async function getItems() {
-    const items = await fetch(
-      'https://strapi-app-2qbph.ondigitalocean.app/api/items?populate=image',
-      {
-        method: 'GET',
-      }
-    );
+    const items = await fetch('/api/items?populate=image', {
+      method: 'GET',
+    });
 
     const itemsJson = await items.json();
     console.log(itemsJson);
