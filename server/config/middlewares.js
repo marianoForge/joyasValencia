@@ -25,7 +25,11 @@ module.exports = [
         "http://localhost:1337",
         "http://localhost:3000",
         "https://lobster-app-ctpxl.ondigitalocean.app",
+        "https://strapi-app-2qbph.ondigitalocean.app",
       ],
+
+      methods: ["GET", "POST", "PUT", "DELETE"],
+      credentials: true,
     },
   },
   "strapi::poweredBy",
