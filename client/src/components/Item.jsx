@@ -37,7 +37,7 @@ const Item = ({ item, width }) => {
           alt={item.name}
           width="300px"
           height="400px"
-          src={`https://strapi-app-2qbph.ondigitalocean.app${url}`}
+          src={url}
           onClick={() => navigate(`/item/${item.id}`)}
           style={{ cursor: 'pointer' }}
         />

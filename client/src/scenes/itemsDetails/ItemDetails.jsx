@@ -54,7 +54,9 @@ const ItemDetails = () => {
             alt={item?.name}
             width="100%"
             height="100%"
-            src={`https://strapi-app-2qbph.ondigitalocean.app${item?.attributes?.image?.data?.attributes?.formats?.medium?.url}`}
+            src={
+              item?.attributes?.image?.data?.attributes?.formats?.medium?.url
+            }
             style={{ objectFit: 'contain' }}
           />
         </Box>
